@@ -17,8 +17,10 @@
 
 ## Translating Loomio
 * [Translation guide](translation.md) (targeting Rails translations)
+* [Translation for developers](translation_for_developers.md)
 
 ## Developing Loomio
+* [Accessibility](accessibility.md)
 * Contributing code
   * [How to squash](how_to_squash.md)
   * Making a pull request
