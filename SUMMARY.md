@@ -1,7 +1,7 @@
 # Summary
 
-## Setup your own Loomio
-* [Setting up loomio in production mode](setup_loomio_production.md)
+## Deploying
+* [Deploying Loomio](setup_loomio_production.md)
   1. [Basic VPS setup](basic_vps_setup.md)
   2. [Setup Loomio with Dokku](install_loomio_with_dokku.md)
   3. [Environment Variables](environment_variables.md)
@@ -15,11 +15,11 @@
 
 * [Reporting a bug](reporting_a_bug.md)
 
-## Translating Loomio
+## Translating
 * [Translation guide](translation.md) (targeting Rails translations)
 * [Translation for developers](translation_for_developers.md)
 
-## Developing Loomio
+## Developing
 * [Accessibility](accessibility.md)
 * Contributing code
   * [How to squash](how_to_squash.md)
@@ -54,6 +54,10 @@
 
 Rails backend
 
+  Services
+    Argument format
+    Return values and raising exceptions on permissions error
+    
   Tests
     how to run cucumber, rspec
     dont bother with isolation tests here.

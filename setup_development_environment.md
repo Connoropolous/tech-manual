@@ -76,13 +76,16 @@ $ cd ~/.rbenv/plugins/ruby-build
 $ git pull
 ```
 
-### Build and Install Ruby (may want to check for the latest version)
+### Build and Install Ruby
+
+At the time of writing 2.2.1 was the latest. 
 
 ```
-$ rbenv install 2.2.0
-$ rbenv global 2.2.0
+$ rbenv install 2.2.1
+$ rbenv global 2.2.1
+$ gem install bundler
+$ bundle
 ```
-NB : *Ruby 2.2.0 has new dependencies* : `sudo apt-get install libffi-dev`
 
 ### Pull the Loomio codebase
 
