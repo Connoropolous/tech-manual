@@ -32,7 +32,10 @@
   * [Useful notes in an unuseful format](code_guidelines.md)
   * Tech used
   * Accessiblity notes
+  * Services
+    * ScrollService
   * Components
+    * [dropdowns](ui_dropdowns.md)
     * file layout
     * naming
       what kind of thing is it?

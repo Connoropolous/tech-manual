@@ -43,7 +43,16 @@ My ‘my dev env is totally b0rked’ checklist:
 
 
 ## Updating to the latest loomio code
-TODO: explain how to update your fork from loomio master
+update your fork from loomio master.
+assuming you're working on a branch: new-feature
+
+```
+g co master
+g pull loomio master
+g co new-feature
+g merge master
+```
+
 We regularly change and update the node modules and bower dependencies.
 If you just updated and things are broken then you need to
 
@@ -104,4 +113,4 @@ What to do when your developer environment breaks:
 - restart rails
 - bundle install; npm install; bower install
 - weep softly
-- look at the actual error message
+- look at the actual error message in rails console or lineman run terminal windows.
