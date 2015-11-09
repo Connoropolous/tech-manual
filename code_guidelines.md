@@ -4,6 +4,7 @@ Loomio started life as a Rails app. Recently we've been developing a javascript 
 
 # Frontend development
 
+
 ## Naming stuff (BEM)
 
 The front end of Loomio is divided into "components" and we have a really simple naming system which helps to keep the codebase easy to use as the application grows. You might have already heard about it, it's called BEM. Here's how we've applied BEM to Loomio:

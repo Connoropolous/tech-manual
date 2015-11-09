@@ -55,18 +55,15 @@
   Recordstore
     is how records have behaviour and relate to each other
 
-Rails backend
+### Rails backend
+- [Services](ruby_services.md)
+  Argument format
+  Return values and raising exceptions on permissions error
 
-  Services
-    Argument format
-    Return values and raising exceptions on permissions error
-    
-  Tests
-    how to run cucumber, rspec
-    dont bother with isolation tests here.
-  API Controllers
+Tests
+  how to run cucumber, rspec
+  dont bother with isolation tests here.
+API Controllers
 
-  Services
-    general format
-
-
+Services
+  general format
