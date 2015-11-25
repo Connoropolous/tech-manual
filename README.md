@@ -1,9 +1,9 @@
 # Loomio Technical Manual
 
 ## Installing Loomio
-[Setup a Loomio development environment](https://github.com/loomio/loomio/wiki/Setup-a-Loomio-development-environment) on MacOS X or Ubuntu Linux. There is a [screencast](https://www.youtube.com/watch?v=YOjQFM9S4Rg) available to guide you through this part of the process.
+[Setup a Loomio development environment](https://github.com/loomio/loomio/wiki/setup_development_environment) on MacOS X or Ubuntu Linux. There is a [screencast](https://www.youtube.com/watch?v=YOjQFM9S4Rg) available to guide you through this part of the process.
 
-[Setup a Loomio production environment](https://github.com/loomio/loomio/wiki/Setup-Loomio-production) (Almost complete, looking for feedback) How to setup Loomio just like we do, to run Loomio.org.
+[Setup a Loomio production environment](https://github.com/loomio/loomio/wiki/setup_loomio_production) (Almost complete, looking for feedback) How to setup Loomio just like we do, to run Loomio.org.
 
 *Need some help?* Check out the [Installing Loomio](https://www.loomio.org/g/C7I2YAPN/loomio-community-installing-loomio) group.  
 
@@ -16,7 +16,7 @@ We have an active translation community. Check out
 [the Translation guide](https://github.com/loomio/loomio/wiki/Translation).
 
 #### Help develop the software
-If you'd like to contribute to the project, [Setup your development environment](https://github.com/loomio/loomio/wiki/Setup-a-Loomio-development-environment) and read up on our [Development Process](https://github.com/loomio/loomio/wiki/2-Development-process).
+If you'd like to contribute to the project, [Setup your development environment](https://github.com/loomio/loomio/wiki/setup_development_environment) and read up on our [Development Process](https://github.com/loomio/loomio/wiki/2-Development-process).
 
 #### Report a bug
 To report a bug, please open a [new Github Issue](https://github.com/loomio/loomio/issues/new)
