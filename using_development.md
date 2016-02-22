@@ -13,6 +13,7 @@ You'll need gulp installed:
 Fetch the npm and bower dependencies:
 
   from within loomio/angular/
+
   `$ npm install`
 
 ## Trying the new user interface in development mode
@@ -62,11 +63,9 @@ We also unit and e2e test the new javascript frontend.
 
 ### Jasmine and Protractor for the frontend
 
-You can run the frontend tests with
+You can run the frontend tests with 
 
-  `$ gulp protractor`
-To compile any new code, and then test. Or, to test right away
-  `$ gulp protractor:now`
+`$ gulp protractor`
 
 stub:
   start rails, start gulp dev
