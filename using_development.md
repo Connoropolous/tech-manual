@@ -67,12 +67,6 @@ You can run the frontend tests with
 
 `$ gulp protractor`
 
-stub:
-  start rails, start gulp dev
-  hit localhost:8000/development/setup_discussion
-  list other development routes and what they are good for
-
-
 ## Halp! My environment is broken!
 
 What to do when your developer environment breaks:
