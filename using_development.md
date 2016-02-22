@@ -4,43 +4,33 @@ See [Setup a Loomio development environment](setup_development_environment.md) f
 
 ## Installing the frontend dependencies
 
-The new javascript frontend is a [linemanjs](http://linemanjs.com/) project. Lineman is a bit behind current best practice, it'll likely be removed eventually. This is what you need to know:
+The new javascript frontend is a [angular](https://angularjs.org/) project. This is what you need to know:
 
-You'll need bower and lineman installed:
+You'll need gulp installed:
 
-  `$ npm install -g bower`  
-  `$ npm install -g lineman`
+  `$ npm install -g gulp`  
 
 Fetch the npm and bower dependencies:
 
-  from within loomio/lineman/
-  `$ npm install`  
-  `$ bower install`
+  from within loomio/angular/
+  `$ npm install`
 
 ## Trying the new user interface in development mode
 Run the rails development server
 
   `$ rails s`  
 
-Then start lineman from the loomio/lineman folder  
+Then start the gulp dev task from the loomio/angular folder  
 
-  `$ lineman run`
+  `$ gulp dev`
+  
+What this does is reconcatenates your app.js file and other files when you make changes to the source files.
 
 We have links that can setup some fake data and log you in:
 
-  http://localhost:8000/development/start_discussion
+  http://localhost:3000/development/start_discussion
 
 See the app/controllers/development_controller.rb for more.
-
-My ‘my dev env is totally b0rked’ checklist:
-
-- restart lineman
-- restart rails
-- run bower install
-- run npm install
-- weep
-- actually look at the error message in lineman/browser console
-
 
 ## Updating to the latest loomio code
 update your fork from loomio master.
@@ -53,13 +43,12 @@ g co new-feature
 g merge master
 ```
 
-We regularly change and update the node modules and bower dependencies.
+We regularly change and update the node modules.
 If you just updated and things are broken then you need to
 
 ```
-cd lineman
+cd angular
 npm install
-bower install
 ```
 
 ## Testing
@@ -73,34 +62,14 @@ We also unit and e2e test the new javascript frontend.
 
 ### Jasmine and Protractor for the frontend
 
-You can run the frontend unit tests with
+You can run the frontend tests with
 
-  `$ lineman spec`
-
-### Running e2e tests
-
-If you don't have them already, install protractor and webdriver-manager:
-
-  `$ npm install -g protractor`  
-  `$ webdriver-manager update --standalone`  
-
-Protractor e2e tests require rails, lineman and webdriver-manager to be
-running at the same time:
-
-  Start webdriver-manager from anywhere
-  `$ webdriver-manager start`  
-
-  Start rails from the loomio folder
-  `$ rails s`
-
-  Start lineman from loomio/lineman
-  `$ lineman run`  
-
-  Run the tests themselves from loomio/lineman
-  `$ lineman grunt spec-e2e`
+  `$ gulp protractor`
+To compile any new code, and then test. Or, to test right away
+  `$ gulp protractor:now`
 
 stub:
-  start rails, lineman
+  start rails, start gulp dev
   hit localhost:8000/development/setup_discussion
   list other development routes and what they are good for
 
@@ -109,8 +78,8 @@ stub:
 
 What to do when your developer environment breaks:
 
-- restart lineman
+- restart the gulp dev task
 - restart rails
-- bundle install; npm install; bower install
+- bundle install; npm install;
 - weep softly
-- look at the actual error message in rails console or lineman run terminal windows.
+- look at the actual error message in rails console or gulp dev terminal windows.
